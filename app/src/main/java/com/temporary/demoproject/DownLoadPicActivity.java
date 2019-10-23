@@ -40,8 +40,8 @@ public class DownLoadPicActivity extends NewBaseActivity {
 
     private DownLoadHandler mHandler;
 
-    private final String BASE_URL = "http://10.1.5.127:8056/";
-    private final String REQUEST_URL = "IotCams/a/httpIfs/app/demo";
+    private final String BASE_URL = "http://www.005.tv/";
+    private final String REQUEST_URL = "uploads/allimg/190702/66-1ZF2143214E2.png";
     private final String FILE_NAME = "demo_pic.jpg";
 
     public static Intent getIntent(Context context) {
