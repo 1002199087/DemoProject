@@ -16,8 +16,10 @@ import com.temporary.util.QMUITipDialogUtil;
 import com.vise.log.ViseLog;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.lang.ref.WeakReference;
 
@@ -85,22 +87,24 @@ public class DownLoadPicActivity extends NewBaseActivity {
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
+                        InputStream is = null;
+                        FileOutputStream fos = null;
+                        BufferedInputStream bis = null;
+                        BufferedOutputStream bos = null;
                         try {
-                            InputStream is = response.body().byteStream();
+                            is = response.body().byteStream();
                             File file = new File(Environment.getExternalStorageDirectory(),
                                     FILE_NAME);
                             if (file.exists()) file.delete();
-                            FileOutputStream fos = new FileOutputStream(file);
-                            BufferedInputStream bis = new BufferedInputStream(is);
+                            fos = new FileOutputStream(file);
+                            bos = new BufferedOutputStream(fos);
+                            bis = new BufferedInputStream(is);
                             byte[] buffer = new byte[1024];
                             int len;
                             while ((len = bis.read(buffer)) != -1) {
-                                fos.write(buffer, 0, len);
+                                bos.write(buffer, 0, len);
                             }
-                            fos.flush();
-                            fos.close();
-                            bis.close();
-                            is.close();
+                            bos.flush();
 
                             Message message = mHandler.obtainMessage();
                             message.obj = file;
@@ -108,6 +112,15 @@ public class DownLoadPicActivity extends NewBaseActivity {
                         } catch (Exception e) {
                             ViseLog.e(e.toString());
                             e.printStackTrace();
+                        } finally {
+                            try {
+                                if (is != null) is.close();
+                                if (bos != null) bos.close();
+                                if (fos != null) fos.close();
+                                if (bis != null) bis.close();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
                         }
                     }
                 }).start();
