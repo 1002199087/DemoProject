@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_array">
+        <item>@string/bluetooth_devices</item>
+        <item>@string/wifi_sd_devices</item>
+    </string-array>
+
+    <string-array name="qmui_dialog_style">
+        <item>@string/qmui_dialog_style_native</item>
+        <item>@string/qmui_dialog_style_custom</item>
+    </string-array>
+
+    <string-array name="qmui_emptyview_texts">
+        <item>@string/qmui_empty_view_two_line</item>
+        <item>@string/qmui_empty_view_one_line</item>
+        <item>@string/qmui_empty_view_loading</item>
+        <item>@string/qmui_empty_view_one_line_and_button</item>
+        <item>@string/qmui_empty_view_two_line_and_button</item>
+    </string-array>
+
+    <string-array name="qmui_fixed_bottom">
+        <item>@string/qmui_fixed_simple_text</item>
+        <item>@string/qmui_fixed_simple_text_and_bottom_indicator</item>
+        <item>@string/qmui_fixed_simple_text_and_top_indicator</item>
+        <item>@string/qmui_fixed_simple_text_and_indicator_not_width_adjust_content</item>
+        <item>@string/qmui_fixed_simple_text_and_left_icon_and_auto_tint</item>
+        <item>@string/qmui_fixed_simple_text_and_sign_count</item>
+        <item>@string/qmui_fixed_simple_text_and_icon_change</item>
+        <item>@string/qmui_fixed_simple_text_and_muti_color</item>
+        <item>@string/qmui_fixed_simple_text_and_change_content_by_index</item>
+        <item>@string/qmui_fixed_simple_text_and_replace_tab_by_index</item>
+    </string-array>
+
+    <string-array name="qmui_tipdialog_list">
+        <item>@string/qmui_tipdialog_loading</item>
+        <item>@string/qmui_tipdialog_success</item>
+        <item>@string/qmui_tipdialog_fail</item>
+        <item>@string/qmui_tipdialog_message</item>
+        <item>@string/qmui_tipdialog_single_photo</item>
+        <item>@string/qmui_tipdialog_single_text</item>
+        <item>@string/qmui_tipdialog_custom</item>
+    </string-array>
+
+    <string-array name="qmui_radiusimage_bottom_list">
+        <item>@string/qmui_radiusimage_modify_1</item>
+        <item>@string/qmui_radiusimage_modify_2</item>
+        <item>@string/qmui_radiusimage_modify_3</item>
+        <item>@string/qmui_radiusimage_modify_4</item>
+        <item>@string/qmui_radiusimage_modify_5</item>
+        <item>@string/qmui_radiusimage_modify_6</item>
+        <item>@string/qmui_radiusimage_modify_7</item>
+        <item>@string/qmui_radiusimage_modify_8</item>
+        <item>@string/qmui_radiusimage_modify_9</item>
+    </string-array>
+
+    <string-array name="popupwindow_citys">
+        <item>@string/popupwindow_city_hanzhou</item>
+        <item>@string/popupwindow_city_guilin</item>
+        <item>@string/popupwindow_city_fuzhou</item>
+        <item>@string/popupwindow_city_huzhou</item>
+    </string-array>
+
+    <string-array name="expressage_titles">
+        <item>@string/expressage_title_shentong</item>
+        <item>@string/expressage_title_ems</item>
+        <item>@string/expressage_title_shunfeng</item>
+        <item>@string/expressage_title_yuantong</item>
+        <item>@string/expressage_title_zhongtong</item>
+        <item>@string/expressage_title_yunda</item>
+        <item>@string/expressage_title_tiantian</item>
+        <item>@string/expressage_title_huitongkuaidi</item>
+        <item>@string/expressage_title_quanfengkuaidi</item>
+        <item>@string/expressage_title_debangwuliu</item>
+        <item>@string/expressage_title_zhaijisong</item>
+    </string-array>
+
+    <string-array name="expressage_values">
+        <item>@string/expressage_value_shentong</item>
+        <item>@string/expressage_value_ems</item>
+        <item>@string/expressage_value_shunfeng</item>
+        <item>@string/expressage_value_yuantong</item>
+        <item>@string/expressage_value_zhongtong</item>
+        <item>@string/expressage_value_yunda</item>
+        <item>@string/expressage_value_tiantian</item>
+        <item>@string/expressage_value_huitongkuaidi</item>
+        <item>@string/expressage_value_quanfengkuaidi</item>
+        <item>@string/expressage_value_debangwuliu</item>
+        <item>@string/expressage_value_zhaijisong</item>
+    </string-array>
+
+    <string-array name="glide_values">
+        <item>网络图片</item>
+        <item>本地图片</item>
+        <item>gif图片</item>
+        <item>缩略图</item>
+        <item>模糊</item>
+        <item>圆角</item>
+        <item>遮盖</item>
+        <item>灰度</item>
+        <item>圆形</item>
+    </string-array>
+</resources>

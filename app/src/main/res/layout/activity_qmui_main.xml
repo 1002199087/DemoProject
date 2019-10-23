@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    tools:context="com.temporary.demoproject.qmuidemo.QmuiMainActivity">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true" />
+
+    <LinearLayout
+        android:id="@+id/fragment_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/fragment_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="123456789" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fragment_button_layout"
+        android:layout_below="@id/topbar"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/button_demo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/button_demo_text"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/dialog_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_demo"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_dialog_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/empty_view_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dialog_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_emptyview_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qmui_tab_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/empty_view_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_tab_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qmui_grouplist_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qmui_tab_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_grouplist_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qmui_tipdialog_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qmui_grouplist_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_tipdialog_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qmui_radiusimage_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qmui_tipdialog_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_radiusimage_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qmui_pullrefresh_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qmui_radiusimage_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_pullrefresh_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qmui_popup_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qmui_pullrefresh_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_popup_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qmui_collapsing_topbar_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qmui_popup_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_collapsing_topbar_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qmui_viewhelper_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qmui_collapsing_topbar_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_viewhelper_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qmui_animationlist_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qmui_viewhelper_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_animationlist_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qmui_snaphelper_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qmui_animationlist_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_snaphelper_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/search_layout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qmui_snaphelper_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/search_layout_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/popup_window_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_layout_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/popup_window_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/select_photp_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popup_window_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/select_photp_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qmui_sms_verification_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/select_photp_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_sms_verification_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qmui_baidumap_location_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qmui_sms_verification_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_baidumap_location_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/swipe_menu_layout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qmui_baidumap_location_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/swipe_menu_layout_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/webview_layout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/swipe_menu_layout_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/webview_layout_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/expand_layout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/webview_layout_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/expand_layout_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/popup_spinner_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expand_layout_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/popup_spinner_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qmui_progressbar_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popup_spinner_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qmui_progressbar_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/mp_chart_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qmui_progressbar_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/mp_chart_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/radio_group_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mp_chart_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/radio_group_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/retrofit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radio_group_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/retrofit_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/expressage_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/retrofit_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/expressage_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/ExpandableListView_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expressage_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/ExpandableListView_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/fresco_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ExpandableListView_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/fresco_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/powercloud_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fresco_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/powercloud_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/calendarview_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/powercloud_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/calenderview_button"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/signature_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarview_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/electronic_signature"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/observe_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signature_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/observe_code"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/databinding_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/observe_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/databingding_title"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/eventbus_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/databinding_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/eventbus_title"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/launchmode_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eventbus_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/launchmodel_title"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/mvp_retrofit_rxjava_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/launchmode_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/mvp_and_retrofit_and_rxjava_title"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/glide_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mvp_retrofit_rxjava_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/glide_title"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/art_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/glide_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/art_title"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/service_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/art_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/two_methods_for_starting_service_text"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/alipay_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/service_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/alipay_text"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/qq_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alipay_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/qq_login_text"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/greendao_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qq_login_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/greendao_text"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/rxpermission_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/greendao_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/rxpermission_text"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/new_baseactivity_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rxpermission_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/new_baseactivity"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/website_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/new_baseactivity_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/website_tip"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/banner_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/new_baseactivity_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/banner_tip"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/arc_bg_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/banner_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/arc_bg_tip"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/download_pic_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/banner_button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/downLoad_pic_tip"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

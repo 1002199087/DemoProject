@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    tools:context="com.temporary.demoproject.qmuidemo.QMUIRoundButtonActivity">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar"
+        android:background="@android:color/white">
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/is_radius_adjust_bounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/button_radius_adjust_bounds_text"
+            app:qmui_isRadiusAdjustBounds="true"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textColor="@drawable/qmui_button_border_color"
+            app:qmui_borderColor="@drawable/qmui_button_border_color"/>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/radius_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/is_radius_adjust_bounds"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textColor="@drawable/qmui_button_border_color"
+            app:qmui_borderColor="@drawable/qmui_button_border_color"
+            app:qmui_radius="5dp"
+            android:text="@string/button_radius_text"/>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_radius_left_top_text"
+            android:textColor="@drawable/qmui_button_border_color"
+            app:qmui_borderColor="@drawable/qmui_button_border_color"
+            android:layout_below="@id/radius_button"
+            app:qmui_radiusTopLeft="15dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

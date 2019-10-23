@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <!--<external-path name="comxf.activity.provider.download" path="." />-->
+        <external-path
+            name="external"
+            path="" />
+    </paths>
+</resources>

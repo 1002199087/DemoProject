@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.temporary.test.OfficeActivity">
+
+    <Button
+        android:id="@+id/read_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="read xlsx" />
+
+    <Button
+        android:id="@+id/read_xls_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/read_button"
+        android:text="read xls" />
+
+    <Button
+        android:id="@+id/read_doc_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/read_xls_button"
+        android:text="read doc" />
+
+    <Button
+        android:id="@+id/read_docx_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/read_doc_button"
+        android:text="read docx" />
+</RelativeLayout>

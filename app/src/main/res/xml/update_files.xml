@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <files-path
+            name="files"
+            path="files" />
+        <cache-path
+            name="cache"
+            path="" />
+        <external-path
+            name="external"
+            path="" />
+        <external-path
+            name="org.unreal.update.demo"
+            path="." />
+        <external-files-path
+            name="externalfiles"
+            path="files" />
+        <!-- 此标签需要 support 25.0.0以上才可以使用-->
+        <external-cache-path
+            name="externalcache"
+            path="files" />
+    </paths>
+</resources>

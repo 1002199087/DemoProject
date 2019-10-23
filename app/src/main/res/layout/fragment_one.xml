@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.temporary.demoproject.fragment.OneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.SearchView
+        android:id="@+id/test_searchview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:iconifiedByDefault="false" />
+
+    <TextView
+        android:id="@+id/content_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_searchview"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hello_blank_fragment" />
+
+    <Button
+        android:id="@+id/test_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_textview"
+        android:text="test button" />
+
+    <EditText
+        android:id="@+id/test_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_button"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:hint="test edittext" />
+
+    <com.temporary.custom.PlanetView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/test_edittext"
+        android:visibility="gone"/>
+
+</RelativeLayout>

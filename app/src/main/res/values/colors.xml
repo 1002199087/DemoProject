@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryLight">#663F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="radio_button_selected">#58B99D</color>
+    <color name="radio_button_unselected">#000000</color>-->
+
+    <!--QMUI-->
+    <!--<color name="qmui_config_color_gray_1">#FFFFFF</color>--><!--标题颜色-->
+    <!--QMUI-->
+    <!--<color name="color_line_gray">#ddd</color>-->
+
+    <color name="radio_button_selected">#58B99D</color>
+    <color name="radio_button_unselected">#000000</color>
+    <color name="colorPrimaryLight">#663F51B5</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark_v2">#264AE1</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="theme_color_light">#1C233F</color>
+    <color name="theme_color_light_transparent">#aa1C233F</color>
+    <color name="theme_color_dark">#151935</color>
+    <color name="hint_color">#66ffffff</color>
+    <color name="hint_color_light">#33ffffff</color>
+    <color name="hint_text_color">#aaffffff</color>
+    <color name="theme_color_blue">#3890FB</color>
+    <color name="theme_color_blue_light">#663890FB</color>
+    <color name="theme_color_blue_v2">#FF19A8EE</color>
+    <color name="theme_color_blue_v3">#1B3C6E</color>264AE1
+    <color name="theme_color_blue_v4">#443A70</color>
+    <color name="theme_color_blue_v5">#543D85</color>
+
+    <color name="theme_color_item_blue">#00e5d7</color>
+    <color name="theme_color_item_purple">#B16EF5</color>
+    <color name="theme_color_item_orange">#FF9D8D</color>
+
+    <color name="theme_color_hint_black">#aa000000</color>
+    <color name="theme_color_yellow_one">#F89805</color>
+    <color name="theme_color_yellow">#EEEE00</color>
+
+    <color name="theme_color_line_time_color">#9D51F4</color>
+    <color name="theme_color_line_time_circle_color">#7364FB</color>
+
+    <color name="theme_color_red_light">#ffff4444</color>
+    <color name="theme_color_red_light_transparent">#66ff4444</color>
+
+    <color name="theme_color_green_light">#4ACFDB</color>
+    <color name="theme_color_green_light_transparent">#664ACFDB</color>
+    <color name="theme_color_green_v2">#FF007F01</color>
+
+    <color name="theme_color_green_device_detail">#FF3F9BDC</color>
+
+    <color name="theme_color_running_one">#FF0C80F4</color>
+    <color name="theme_color_running_two">#FF2ECA72</color>
+    <color name="theme_color_running_three">#FFEDAD24</color>
+    <color name="theme_color_running_four">#FFF3164F</color>
+    <color name="theme_color_running_five">#FFF74091</color>
+    <color name="theme_color_running_six">#FF7A5DC2</color>
+
+    <color name="water_theme_gray_bg_color">#EEE9E9</color>
+    <color name="water_theme_blue_color">#0099EB</color>
+    <color name="water_theme_blue_color_transparent">#660099EB</color>
+    <color name="water_theme_gray_color_dark">#515151</color>
+    <color name="water_theme_white_color_transparent">#66ffffff</color>
+</resources>

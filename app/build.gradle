@@ -1,0 +1,158 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+// 添加插件
+apply plugin: 'com.mob.sdk'
+apply plugin: 'org.greenrobot.greendao'
+
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.temporary.demoproject"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        packagingOptions {
+            exclude 'META-INF/rxjava.properties'
+        }
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "895890d35bc00cdc8d732557", //JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        incremental true
+        jumboMode true
+        keepRuntimeAnnotatedClasses false
+        javaMaxHeapSize "8g"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+MobSDK {
+    appKey "273b2caff223f"
+    appSecret "c372ceaf0b90984e67e2ddcb53a0de10"
+
+    SMSSDK {
+        gui false
+    }
+}
+
+/*sourceSets {
+    main {
+        jniLibs.srcDir 'libs'
+        //说明so的路径为该libs路径，关联所有地图SDK的so文件
+    }
+}*/
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:0.5'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    implementation 'com.squareup.okio:okio:1.11.0'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.github.tibolte:elasticdownload:1.0.4'
+    implementation 'com.github.traex.calendarlistview:library:1.2.3'
+    //compile 'com.github.prolificinteractive:material-calendarview:1.4.3'
+    implementation 'com.prolificinteractive:material-calendarview:1.4.0'
+    implementation 'com.qmuiteam:qmui:1.1.5'
+    implementation 'com.android.support:design:24.1.1'
+    implementation 'com.carson_ho:SearchLayout:1.0.1'
+    implementation 'com.github.open-android:WheelPicker:v1.0.0'
+    /*implementation files('libs/jxl.jar')
+                        implementation files('libs/poi-3.9.jar')
+                        implementation files('libs/poi-ooxml-schemas-3.15.jar')
+                        implementation files('libs/poi-3.15.jar')
+                        implementation files('libs/poi-ooxml-3.15.jar')*/
+    /*百度地图*/
+    implementation files('libs/BaiduLBS_Android.jar')
+    /*列表滑动删除*/
+    implementation 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.1'
+    /*greendao数据库*/
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation files('libs/tbs_sdk_thirdapp_v3.6.0.1315_43612_sharewithdownload_withoutGame_obfs_20180718_102847.jar')
+
+    implementation 'com.mikhaellopez:circularprogressbar:2.0.0'
+
+    /*网络图片加载*/
+    implementation 'com.facebook.fresco:fresco:1.10.0'
+
+    implementation 'com.haibin:calendarview:3.4.8'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'jp.wasabeef:glide-transformations:2.0.1'
+
+    //compile 'io.reactivex:rxjava:1.0.14'
+    implementation 'io.reactivex:rxandroid:1.0.1'
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+    // Optional, if you use support library fragments:
+    debugImplementation 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.3'
+
+    //implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'org.simple:androideventbus:1.0.5.1'
+
+    compile(name: 'alipaySdk-15.6.0-20190226104053', ext: 'aar')
+    //compile(name: 'alipay-sdk-java-3.7.4.ALL', ext: 'jar')
+
+    //implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.5'
+
+    //极光推送
+    implementation 'cn.jiguang.sdk:jpush:3.2.0'  // 此处以JPush 3.2.0 版本为例。
+    implementation 'cn.jiguang.sdk:jcore:2.0.0'  // 此处以JCore 2.0.0 版本为例。
+
+    implementation 'com.github.zzz40500:android-shapeLoadingView:1.0.3.2'
+
+    implementation 'com.github.czy1121:loadinglayout:1.0.1'
+
+    implementation 'tech.michaelx.loadinglibrary:loadinglibrary:1.0.2'
+    implementation 'com.android.support:support-annotations:25.3.1'
+
+    // 加载网络界面
+    implementation 'com.just.agentweb:agentweb:4.0.2'
+
+    // 轮播图片
+    implementation 'com.youth.banner:banner:1.4.10'  //最新版本
+
+    implementation 'com.trello:rxlifecycle:0.5.0'
+    implementation 'com.trello:rxlifecycle-components:0.5.0'
+    //RecyclerView动画
+    implementation 'jp.wasabeef:recyclerview-animators:2.2.7'
+    //ViseLog 工具
+    implementation 'com.vise.xiaoyaoyou:viselog:1.1.2'
+}

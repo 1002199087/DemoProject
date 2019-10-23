@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.temporary.demoproject.fragment.TwoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/test_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="test button"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/content_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_button"
+        android:text="two fragment"
+        android:visibility="gone"/>
+
+    <is.arontibo.library.ElasticDownloadView
+        android:id="@+id/m_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_textview"
+        android:background="@null"
+        android:visibility="gone"/>
+
+    <com.andexert.calendarlistview.library.DayPickerView
+        android:id="@+id/pick_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/m_view"
+        android:visibility="gone"/>
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarview"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pick_view"
+        />
+</RelativeLayout>

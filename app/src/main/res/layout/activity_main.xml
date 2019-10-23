@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.temporary.demoproject.MainActivity">
+
+    <TextView
+        android:id="@+id/connecting_ap_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/wifi_ap_connecting_ap_text"/>
+
+    <Button
+        android:id="@+id/wifi_info_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_ap_reconnect_button_text"/>
+
+    <Button
+        android:id="@+id/flashair_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_ap_wifi_sdcard_files_button_text"/>
+
+    <Button
+        android:id="@+id/recyclerview_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_ap_list_button_text"/>
+
+    <TextView
+        android:id="@+id/content_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/demo_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.temporary.adapter.DataBindingAdapter" />
+
+        <variable
+            name="people"
+            type="com.temporary.bean.PeopleDao" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_item_bg">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@{people.name}"
+            android:textColor="#000000"
+            android:textSize="15sp" /><!--android:background="@drawable/pager_layout_item_bg"-->
+    </RelativeLayout>
+</layout>

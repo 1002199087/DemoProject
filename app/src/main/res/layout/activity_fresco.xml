@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.temporary.demoproject.qmuidemo.FrescoActivity">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:qmui_topbar_bg_color="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simple_drawee_view"
+            android:layout_width="wrap_content"
+            app:viewAspectRatio="100"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:roundAsCircle="false"
+            app:roundingBorderColor="@color/colorPrimary"
+            app:roundingBorderWidth="2dp"
+            fresco:retryImageScaleType="centerInside" />
+    </LinearLayout>
+</LinearLayout>

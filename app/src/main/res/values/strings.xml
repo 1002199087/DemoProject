@@ -1,0 +1,260 @@
+<resources>
+    <string name="app_name">DemoProject</string>
+
+    <string name="bluetooth_devices">蓝牙</string>
+    <string name="wifi_sd_devices">WIFI SD卡</string>
+    <string name="downloading_text">正在下载</string>
+    <string name="download_success_toast_text">下载完成！</string>
+    <string name="download_fail_toast_text">下载失败！</string>
+    <string name="wifi_ap_password_title">密码</string>
+    <string name="wifi_ap_ok_title">确定</string>
+    <string name="wifi_ap_cancel_title">取消</string>
+    <string name="wifi_ap_connect_progress_msg">正在连接……</string>
+    <string name="wifi_ap_connect_fail_toast_text">连接失败！</string>
+    <string name="wifi_ap_connect_success_toast_text">连接成功！</string>
+    <string name="wifi_ap_reconnect_button_text">断线重连外网热点</string>
+    <string name="wifi_ap_wifi_sdcard_files_button_text">获取 wifi sdcard 内文件列表</string>
+    <string name="wifi_ap_list_button_text">获取热点列表</string>
+    <string name="wifi_ap_connecting_ap_text">当前连接热点： %1$s </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="button_demo_text">QMUI按键_QMUIRoundButton</string>
+    <string name="button_radius_adjust_bounds_text">自动设置圆形_isRadiusAdjustBounds</string>
+    <string name="button_radius_text">手动设置圆角率_radius</string>
+    <string name="button_radius_left_top_text">手动设置左上角圆角率_radius</string>
+    <string name="qmui_dialog_button">QMUI弹出框_QMUIDialog</string>
+    <string name="qmui_emptyview_button">QMUI空界面控件_QMUIEmptyView</string>
+    <string name="qmui_tab_button">QMUI tab 控件_QMUITabSegment</string>
+    <string name="message_dialog_button">消息类型弹出框_QMUIDialog.MessageDialogBuilder</string>
+    <string name="checkbox_message_dialog_button">checkbox消息类型弹出框_QMUIDialog.CheckBoxMessageDialogBuilder</string>
+    <string name="edittext_message_dialog_button">输入框弹出框_QMUIDialog.EditTextDialogBuilder</string>
+    <string name="menu_dialog_button">菜单弹出框_QMUIDialog.MenuDialogBuilder</string>
+    <string name="checkable_dialog_button">单选菜单弹出框_QMUIDialog.CheckableDialogBuilder</string>
+    <string name="multi_checkable_dialog_button">多选菜单弹出框_QMUIDialog.MultiCheckableDialogBuilder</string>
+
+    <string name="qmui_dialog_style_native">原生风格</string>
+    <string name="qmui_dialog_style_custom">自定义风格</string>
+
+    <string name="qmui_empty_view_two_line">显示两行提示语</string>
+    <string name="qmui_empty_view_one_line">显示一行提示语</string>
+    <string name="qmui_empty_view_loading">显示Loading</string>
+    <string name="qmui_empty_view_one_line_and_button">显示一行文字和按钮</string>
+    <string name="qmui_empty_view_two_line_and_button">显示两行文字和按钮</string>
+
+    <string name="qmui_fixed_width_text">固定宽度，内容均分</string>
+    <string name="qmui_fixed_simple_text">简单文字</string>
+    <string name="qmui_fixed_simple_text_and_bottom_indicator">文字 + 底部indicator</string>
+    <string name="qmui_fixed_simple_text_and_top_indicator">文字 + 顶部indicator</string>
+    <string name="qmui_fixed_simple_text_and_indicator_not_width_adjust_content">文字 + indicator长度不要跟随内容长度</string>
+    <string name="qmui_fixed_simple_text_and_left_icon_and_auto_tint">文字 + icon(支持四个方向) + 自动着色选中态</string>
+    <string name="qmui_fixed_simple_text_and_sign_count">显示红点</string>
+    <string name="qmui_fixed_simple_text_and_icon_change">选中态更换 icon</string>
+    <string name="qmui_fixed_simple_text_and_muti_color">不同 item，不同文字(icon)颜色</string>
+    <string name="qmui_fixed_simple_text_and_change_content_by_index">根据 index 更新 tab 文案</string>
+    <string name="qmui_fixed_simple_text_and_replace_tab_by_index">根据 index 完全替换 tab</string>
+
+    <string name="qmui_content_adaptation_text">内容自适应，超过父容器则滚动</string>
+
+    <string name="qmui_grouplist_button">QMUI grouplist 控件_QMUIGroupListView</string>
+
+    <string name="qmui_tipdialog_button">QMUI tipdialog 控件_QMUITipDialog</string>
+    <string name="qmui_tipdialog_loading">Loading 类型提示框</string>
+    <string name="qmui_tipdialog_success">成功提示类型提示框</string>
+    <string name="qmui_tipdialog_fail">失败提示类型提示框</string>
+    <string name="qmui_tipdialog_message">信息提示类型提示框</string>
+    <string name="qmui_tipdialog_single_photo">单独图片类型提示框</string>
+    <string name="qmui_tipdialog_single_text">单独文字类型提示框</string>
+    <string name="qmui_tipdialog_custom">自定义内容提示框</string>
+
+    <string name="qmui_radiusimage_button">QMUI radiusimage 控件_QMUIRadiusImageView</string>
+    <string name="qmui_radiusimage_circle_title">剪裁为圆形+边框+点击效果</string>
+    <string name="qmui_radiusimage_oval_title">剪裁为椭圆形+边框+点击效果</string>
+    <string name="qmui_radiusimage_round_rect_title">剪裁为圆角矩形+边框+点击效果</string>
+    <string name="qmui_radiusimage_modify_tip">可以通过右上角的按钮动态修改下图的效果</string>
+
+    <string name="qmui_radiusimage_modify_1">改变边框颜色与宽度</string>
+    <string name="qmui_radiusimage_modify_2">改变选中态边框颜色与宽度</string>
+    <string name="qmui_radiusimage_modify_3">改变选中态 Mask 的颜色（带透明度）</string>
+    <string name="qmui_radiusimage_modify_4">手工切换选中态</string>
+    <string name="qmui_radiusimage_modify_5">改变圆角大小</string>
+    <string name="qmui_radiusimage_modify_6">变为圆形</string>
+    <string name="qmui_radiusimage_modify_7">变为椭圆形</string>
+    <string name="qmui_radiusimage_modify_8">禁止使用touchSelect态</string>
+    <string name="qmui_radiusimage_modify_9">重置为初始态</string>
+
+    <string name="qmui_pullrefresh_button">QMUI下拉刷新控件_QMUIPullRefreshLayout</string>
+    <string name="qmui_pullrefresh_default_offset_calculator">默认效果: ListView 下拉到一定距离后不动</string>
+    <string name="qmui_pullrefresh_follow_offset_calculator">ListView 一直跟随下拉的效果</string>
+    <string name="qmui_pullrefresh_center_gravity_offset_calculator">ListView 处于下拉区域的中间的效果</string>
+
+    <string name="qmui_popup_button">QMUI浮动弹出框控件_QMUIPopup</string>
+    <string name="qmui_normal_popup_button">普通浮动弹出框</string>
+    <string name="qmui_list_popup_button">列表浮动弹出框</string>
+
+    <string name="qmui_collapsing_topbar_button">QMUI滚动topbar控件_QMUICollapsingTopBarLayout</string>
+
+    <string name="qmui_viewhelper_button">QMUI动画控件_QMUIViewHelper</string>
+    <string name="qmui_viewhelper_fade_in_and_out_button">Fade 进退场动画</string>
+    <string name="qmui_viewhelper_Slide_in_and_out_button">Slide 进退场动画</string>
+    <string name="qmui_viewhelper_fade_in_button">Fade 进场动画</string>
+    <string name="qmui_viewhelper_fade_out_button">Fade 退场动画</string>
+    <string name="qmui_viewhelper_Slide_in_button">Slide 进场动画</string>
+    <string name="qmui_viewhelper_Slide_out_button">Slide 退场动画</string>
+
+    <string name="qmui_animationlist_button">QMUI带动画列表控件_QMUIAnimationListView</string>
+
+    <string name="qmui_snaphelper_button">QMUI滚动界面控件_SnapHelper</string>
+
+    <string name="search_layout_button">搜索控件_SearchLayout</string>
+    <string name="search_layout_history">历史记录</string>
+    <string name="search_layout_history_clear">清除</string>
+
+    <string name="popup_window_button">底部弹出框_PopupWindow</string>
+    <string name="popup_window_date_button">日期选择</string>
+    <string name="popup_window_city_button">城市选择</string>
+    <string name="popup_window_evaluation_button">评价</string>
+    <string name="popup_window_date_result_text">%1$d 年 %2$d 月 %3$d 日</string>
+
+    <string name="select_photp_button">调用系统相册选择图片上传</string>
+    <string name="take_photp_button">调用系统相机拍摄图片上传</string>
+
+    <string name="popupwindow_year_text">年</string>
+    <string name="popupwindow_month_text">月</string>
+    <string name="popupwindow_day_text">日</string>
+    <string name="popupwindow_hour_text">时</string>
+    <string name="popupwindow_min_text">分</string>
+    <string name="popupwindow_sec_text">秒</string>
+
+    <string name="popupwindow_cancel_text">取消</string>
+    <string name="popupwindow_ok_text">确定</string>
+    <string name="popupwindow_date_text">日期</string>
+
+    <string name="popupwindow_city_hanzhou">杭州</string>
+    <string name="popupwindow_city_guilin">桂林</string>
+    <string name="popupwindow_city_fuzhou">福州</string>
+    <string name="popupwindow_city_huzhou">湖州</string>
+
+    <string name="qmui_sms_verification_button">短信验证</string>
+    <string name="qmui_sms_verification_input_phone_num_text">请输入手机号</string>
+    <string name="qmui_sms_verification_input_phone_verification_text">请输入验证码</string>
+    <string name="qmui_sms_verification_get_phone_verification_text">获取验证码</string>
+    <string name="qmui_sms_send_text">发送</string>
+    <string name="qmui_sms_phone_num_null_toast">手机号不能为空！</string>
+    <string name="qmui_sms_phone_and_verification_num_null_toast">手机号、验证码不能为空！</string>
+    <string name="qmui_sms_verification_num_count_timer">剩余 %1$d 秒</string>
+
+    <string name="qmui_baidumap_location_button">百度地图定位</string>
+
+    <string name="swipe_menu_layout_button">列表滑动删除控件_SwipeMenuLayout</string>
+    <string name="swipe_menu_delete_item">删除</string>
+
+    <string name="webview_layout_button">网页内容显示控件_WebView</string>
+
+    <string name="expand_layout_button">展开收起效果</string>
+    <string name="expand_text_button">展开</string>
+    <string name="close_text_button">收起</string>
+    <string name="expand_project_name">项目：</string>
+    <string name="expand_date">日期：</string>
+    <string name="expand_content">内容：</string>
+    <string name="expand_content_text">在oncreate中View.getWidth和View.getHeight无法获得一个view的高度和宽度，这是因为View组件布局要在onResume回调后完成。所以现在需要使用getViewTreeObserver().addOnGlobalLayoutListener()来获得宽度或者高度。这是获得一个view的宽度和高度的方法之一。</string>
+
+    <string name="popup_spinner_button">popup下拉框</string>
+    <string name="popup_spinner_center_view_title_all">全部</string>
+
+    <string name="qmui_progressbar_button">QMUI进度条_QMUIProgressBar</string>
+    <string name="qmui_progressbar_value_button">进度 %$d %</string>
+
+    <string name="mp_chart_button">图表柱形图_MPAndroidChart</string>
+
+    <string name="radio_group_button">实现底部选项_RadioGroup</string>
+
+    <string name="retrofit_button">网络通信_Retrofit</string>
+
+    <string name="expressage_button">快递查询</string>
+    <string name="select_expressage_type">请选择</string>
+    <string name="input_expressage_num">请填写单号</string>
+    <string name="inquire_expressage_button">查询</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_fail">保存失败</string>
+
+    <string name="expressage_title_shentong">申通</string>
+    <string name="expressage_title_ems">EMS</string>
+    <string name="expressage_title_shunfeng">顺丰</string>
+    <string name="expressage_title_yuantong">圆通</string>
+    <string name="expressage_title_zhongtong">中通</string>
+    <string name="expressage_title_yunda">韵达</string>
+    <string name="expressage_title_tiantian">天天</string>
+    <string name="expressage_title_huitongkuaidi">汇通</string>
+    <string name="expressage_title_quanfengkuaidi">全峰</string>
+    <string name="expressage_title_debangwuliu">德邦</string>
+    <string name="expressage_title_zhaijisong">宅急送</string>
+
+    <string name="expressage_value_shentong">shentong</string>
+    <string name="expressage_value_ems">ems</string>
+    <string name="expressage_value_shunfeng">shunfeng</string>
+    <string name="expressage_value_yuantong">yuantong</string>
+    <string name="expressage_value_zhongtong">zhongtong</string>
+    <string name="expressage_value_yunda">yunda</string>
+    <string name="expressage_value_tiantian">tiantian</string>
+    <string name="expressage_value_huitongkuaidi">huitongkuaidi</string>
+    <string name="expressage_value_quanfengkuaidi">quanfengkuaidi</string>
+    <string name="expressage_value_debangwuliu">debangwuliu</string>
+    <string name="expressage_value_zhaijisong">zhaijisong</string>
+
+    <string name="ExpandableListView_button">二级列表展开_ExpandableListView</string>
+
+    <string name="fresco_button">网络图片加载_Fresco</string>
+    <string name="powercloud_button">powercloud_界面</string>
+    <string name="calenderview_button">日历框架_CalenderView</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="electronic_signature">电子签名</string>
+    <string name="observe_code">响应式编程</string>
+    <string name="databingding_title">databinding框架</string>
+    <string name="eventbus_title">EventBus框架</string>
+    <string name="post_eventbus_test">post 发布</string>
+    <string name="sticky_eventbus_test">postSticky 发布</string>
+    <string name="remove_eventbus_test">取消EventBus注册</string>
+    <string name="eventbus_sub1_test">EventBus sub1</string>
+    <string name="intent_eventbus_sub1_test">跳转 sub1</string>
+    <string name="launchmodel_title">launchmode 模式</string>
+    <string name="mvp_and_retrofit_and_rxjava_title">MVP+Retrofit+RxJava 模式</string>
+    <string name="glide_title">glide 框架</string>
+    <string name="art_title">判断虚拟机是ART or Dalvik</string>
+    <string name="one_method_text">方法一</string>
+    <string name="two_method_text">方法二</string>
+    <string name="two_methods_for_starting_service_text">启动服务的两种方式</string>
+    <string name="one_method_for_starting_service_text">startService</string>
+    <string name="two_method_for_starting_service_text">bindService</string>
+    <string name="alipay_text">支付宝支付</string>
+    <string name="alipay_button_text">支付</string>
+    <string name="qq_login_text">QQ登陆</string>
+    <string name="greendao_text">GreenDao数据库</string>
+    <string name="rxpermission_text">RxPermission 动态权限框架</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="new_baseactivity">新BaseActivity</string>
+    <string name="please_select_user_water_enterprise_tip">请选择水司</string>
+    <string name="please_input_user_account_tip">请输入账号</string>
+    <string name="please_input_user_password_tip">请输入密码</string>
+    <string name="water_enterprise_login_tip">水司登录</string>
+    <string name="user_login_tip">客户登录</string>
+    <string name="website_tip">网站登陆</string>
+    <string name="banner_tip">banner图片轮播</string>
+    <string name="arc_bg_tip">弧形背景</string>
+    <string name="arc_bg_T_color_tip">下凸纯色</string>
+    <string name="arc_bg_T_pic_tip">下凸图片</string>
+    <string name="downLoad_pic_tip">下载图片</string>
+
+    <string name="start_downLoad_tip">开始下载</string>
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.temporary.demoproject">
+
+    <permission
+        android:name="com.temporary.demoproject.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="com.temporary.demoproject.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_v2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/mQmUI">
+        <activity android:name=".DownLoadPicActivity"></activity>
+        <activity android:name=".ArcBgActivity" />
+        <activity android:name=".BannerActivity" />
+        <activity android:name=".WebsiteActivity" />
+        <activity android:name=".OverlayActivity" />
+        <activity android:name=".LoadingLibraryActivity" />
+        <activity android:name=".LoadingLayoutActivity" />
+        <activity android:name=".qmuidemo.LoadingViewActivity" />
+        <activity android:name=".NewBaseDemoActivity" />
+        <activity android:name=".NewBaseActivity" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="P1TxlqqazBH9uEZguWTfGU1xofora8Me" />
+
+        <activity android:name=".MainActivity"> <!-- android:name=".MyApplication" -->
+        </activity>
+        <activity
+            android:name=".FlashairActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.temporary.test.SpinnerActivity" />
+        <activity android:name="com.temporary.test.WifiTestActivity" />
+        <activity android:name=".viewmodel.WifiSwitcherActivity" />
+        <activity android:name="com.temporary.test.BitmapActivity" />
+        <activity android:name="com.temporary.test.LooperDataActivity" />
+        <activity android:name="com.temporary.test.OfficeActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="org.unreal.update.demo"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/update_files" />
+        </provider>
+
+        <activity
+            android:name="com.temporary.test.JsonActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".MPandroidChartActivity" />
+        <activity android:name=".RadioGroupActivity" />
+        <activity android:name=".qmuidemo.QmuiMainActivity" />
+        <activity android:name=".qmuidemo.QMUIRoundButtonActivity" />
+        <activity android:name=".qmuidemo.QMUIDialogActivity" />
+        <activity android:name=".qmuidemo.QMUIEmptyViewActivity" />
+        <activity android:name=".qmuidemo.QMUITabActivity" />
+        <activity android:name=".qmuidemo.QMUITabFixedActivity" />
+        <activity android:name=".qmuidemo.QMUITabScrollActivity" />
+        <activity android:name=".qmuidemo.QMUIGroupListViewActivity" />
+        <activity android:name=".qmuidemo.QMUITipDialogActivity" />
+        <activity android:name=".qmuidemo.QMUIRadiusImageViewActivity" />
+        <activity android:name=".qmuidemo.QMUIPullRefreshLayoutActivity" />
+        <activity android:name=".qmuidemo.QMUIPopupActivity" />
+        <activity android:name=".qmuidemo.QMUICollapsingTopBarLayoutActivity" />
+        <activity android:name=".qmuidemo.QMUIViewHelperActivity" />
+        <activity android:name=".qmuidemo.QMUIAnimationListViewActivity" />
+        <activity android:name=".qmuidemo.QMUISnapHelperActivity" />
+        <activity
+            android:name=".qmuidemo.SearchLayoutActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".qmuidemo.PopupWindowActivity" />
+        <activity android:name=".qmuidemo.SmsVerificationActivity" />
+        <activity android:name=".qmuidemo.BaiduMapLoactionActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name=".qmuidemo.SwipeMenuLayoutActivity" />
+        <activity android:name=".qmuidemo.WebViewActivity" />
+        <activity android:name=".qmuidemo.ExpandViewActivity" />
+        <activity android:name=".qmuidemo.PopupSpinnerActivity" />
+        <activity
+            android:name=".qmuidemo.QueryPhotoActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".qmuidemo.QMUIProgressBarActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".qmuidemo.QMUIExpressageActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".qmuidemo.ExpandableListViewActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".qmuidemo.FrescoActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2" />
+        <activity android:name=".CalendarViewActivity" />
+        <activity android:name=".SignatureActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/SplashAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ObserveActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".DataBindingActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".EventBusMainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".EventBusSub1Activity" />
+        <activity android:name=".LaunchModeActivity" />
+        <activity android:name=".MVPAndRetrofitAndRxJavaActivity" />
+        <activity android:name=".GlideActivity" />
+        <activity android:name=".DalvikOrARTActivity" />
+        <activity android:name=".BindServiceActivity" />
+
+        <service android:name="com.temporary.service.TestService">
+            <intent-filter>
+                <action android:name="android.intent.action.TEST_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".AlipayActivity" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity android:name=".GreenDaoActivity" />
+        <activity android:name=".RxPermissionActivity" />
+
+        <receiver
+            android:name="com.temporary.receiver.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.temporary.demoproject" /> <!-- JPush上注册的包名 -->
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.temporary.service.XService"
+            android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

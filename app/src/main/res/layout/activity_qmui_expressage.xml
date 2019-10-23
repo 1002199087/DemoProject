@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/expressage_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.temporary.demoproject.qmuidemo.QMUIExpressageActivity">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:qmui_topbar_bg_color="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/expressage_type_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/select_expressage_type"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/expressage_num_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_edittext_bg"
+            android:hint="@string/input_expressage_num"
+            android:text="486349079222"
+            android:textCursorDrawable="@drawable/custom_edittext_cursor_bg" />
+        <!--android:theme="@style/MyEditText"
+            android:text="486349079222"-->
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/inquire_expressage_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="@string/inquire_expressage_button"
+            android:textColor="@drawable/qmui_button_border_color"
+            app:qmui_borderColor="@drawable/qmui_button_border_color"
+            app:qmui_isRadiusAdjustBounds="true" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/expressage_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

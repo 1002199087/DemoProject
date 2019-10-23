@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.temporary.demoproject.qmuidemo.QMUIRadiusImageViewActivity">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/m_textview_style_for_radiusimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qmui_radiusimage_circle_title" />
+
+            <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:src="@mipmap/jpgtest"
+                app:qmui_border_color="@color/colorPrimary"
+                app:qmui_border_width="2dp"
+                app:qmui_is_circle="true"
+                app:qmui_selected_border_color="@color/colorPrimaryLight" />
+
+            <TextView
+                style="@style/m_textview_style_for_radiusimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qmui_radiusimage_oval_title" />
+
+            <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:src="@mipmap/jpgtest"
+                app:qmui_border_color="@color/colorPrimary"
+                app:qmui_border_width="2dp"
+                app:qmui_is_oval="true"
+                app:qmui_selected_border_color="@color/colorPrimaryLight" />
+
+            <TextView
+                style="@style/m_textview_style_for_radiusimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qmui_radiusimage_round_rect_title" />
+
+            <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:src="@mipmap/jpgtest"
+                app:qmui_border_color="@color/colorPrimary"
+                app:qmui_border_width="2dp"
+                app:qmui_corner_radius="10dp"
+                app:qmui_selected_border_color="@color/colorPrimaryLight" />
+
+            <TextView
+                style="@style/m_textview_style_for_radiusimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qmui_radiusimage_modify_tip" />
+
+            <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                android:id="@+id/radius_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:src="@mipmap/jpgtest"
+                app:qmui_border_color="@color/colorPrimary"
+                app:qmui_border_width="2dp"
+                app:qmui_selected_border_color="@color/colorPrimaryLight" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.temporary.demoproject.DataBindingActivity">
+
+    <data>
+
+        <variable
+            name="people"
+            type="com.temporary.bean.PeopleDao" />
+
+        <variable
+            name="activity"
+            type="com.temporary.demoproject.DataBindingActivity" />
+
+        <variable
+            name="viewmodel"
+            type="com.temporary.viewmodel.DemoViewModel" />
+
+        <variable
+            name="adapter"
+            type="com.temporary.adapter.DataBindingAdapter" />
+
+        <import type="com.temporary.util.DataBindingUtil" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.qmuiteam.qmui.widget.QMUITopBar
+            android:id="@+id/mQmuiTopbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:qmui_topbar_bg_color="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/one_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="@{activity::onViewClicked}"
+                    android:text="添加item" />
+
+                <Button
+                    android:id="@+id/two_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="@{activity::onViewClicked}"
+                    android:text="删除item" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/demo_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="@{activity::onViewClicked}"
+                android:text="@{people.name}" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:onClick="@{activity::onViewClicked}"
+                android:text="@{DataBindingUtil.getItemCountDesc(people.age)}" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/data_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutAnimation="@anim/layout_anim_item_down" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

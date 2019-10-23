@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.temporary.test.JsonActivity">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:qmui_topbar_bg_color="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/test_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="test button" />
+
+        <Button
+            android:id="@+id/get_detail_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="get detail button" />
+
+        <Button
+            android:id="@+id/upload_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="upload button" />
+
+        <Button
+            android:id="@+id/baidumap_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="baidumap button" />
+
+        <Button
+            android:id="@+id/gaodemap_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="gaodemap button" />
+
+        <TextView
+            android:id="@+id/result_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

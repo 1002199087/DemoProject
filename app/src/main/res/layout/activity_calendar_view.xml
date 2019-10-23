@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.temporary.demoproject.CalendarViewActivity"><!--xmlns:attr="http://schemas.android.com/res/com.temporary.declare_styleable"-->
+
+    <TextView
+        android:id="@+id/date_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!--<com.haibin.calendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color_light"
+        attr:current_day_lunar_text_color="@color/theme_color_blue"
+        attr:current_month_lunar_text_color="#CFCFCF"
+        attr:current_month_text_color="#333333"
+        attr:max_year="2020"
+        attr:min_year="2004"
+        attr:month_view="com.temporary.custom.SimpleMonthView"
+        attr:other_month_lunar_text_color="#e1e1e1"
+        attr:other_month_text_color="#e1e1e1"
+        attr:scheme_text="假"
+        attr:scheme_text_color="#333"
+        attr:scheme_theme_color="#128c4b"
+        attr:selected_lunar_text_color="#CFCFCF"
+        attr:selected_text_color="@android:color/white"
+        attr:selected_theme_color="#108cd4"
+        attr:week_background="#1C233F"
+        attr:week_text_color="#aaffffff"
+        attr:week_view="com.temporary.custom.SimpleWeekView"
+        attr:year_view_day_text_color="#333333"
+        attr:year_view_day_text_size="9sp"
+        attr:year_view_month_text_color="#ff0000"
+        attr:year_view_month_text_size="20sp"
+        attr:year_view_scheme_color="#f17706" />--><!--attr:month_view="com.haibin.calendarviewproject.meizu.MeiZuMonthView"
+        attr:week_view="com.haibin.calendarviewproject.meizu.MeizuWeekView"-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_color_dark"
+        android:orientation="vertical">
+
+        <com.haibin.calendarview.CalendarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/theme_color_dark"
+            android:orientation="vertical"
+            app:calendar_content_view_id="@+id/recyclerView">
+
+            <com.haibin.calendarview.CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/theme_color_light"
+                app:current_day_lunar_text_color="@color/theme_color_blue"
+                app:current_month_lunar_text_color="#CFCFCF"
+                app:current_month_text_color="#333333"
+                app:max_year="2020"
+                app:min_year="2004"
+                app:month_view="com.temporary.custom.CustomMonthView"
+                app:other_month_lunar_text_color="#e1e1e1"
+                app:other_month_text_color="#e1e1e1"
+                app:scheme_text="假"
+                app:scheme_text_color="#333"
+                app:scheme_theme_color="#128c4b"
+                app:selected_lunar_text_color="#CFCFCF"
+                app:selected_text_color="@android:color/white"
+                app:selected_theme_color="#108cd4"
+                app:week_background="#1C233F"
+                app:week_text_color="#aaffffff"
+                app:week_view="com.temporary.custom.CustomWeekView"
+                app:year_view_day_text_color="#333333"
+                app:year_view_day_text_size="9sp"
+                app:year_view_month_text_color="#ff0000"
+                app:year_view_month_text_size="20sp"
+                app:year_view_scheme_color="#f17706" /><!--app:week_view="com.temporary.custom.SimpleWeekView"-->
+
+            <com.temporary.custom.group.GroupRecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/theme_color_dark"
+                app:group_background="@color/theme_color_dark"
+                app:group_center="false"
+                app:group_has_header="false"
+                app:group_height="42dp"
+                app:group_padding_left="16dp"
+                app:group_padding_right="16dp"
+                app:group_text_color="#555555"
+                app:group_text_size="14sp" />
+        </com.haibin.calendarview.CalendarLayout>
+    </LinearLayout>
+</LinearLayout>

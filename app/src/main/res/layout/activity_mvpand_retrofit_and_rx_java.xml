@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.temporary.demoproject.MVPAndRetrofitAndRxJavaActivity">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.temporary.demoproject.MVPAndRetrofitAndRxJavaActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.qmuiteam.qmui.widget.QMUITopBar
+            android:id="@+id/mQmuiTopbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:qmui_topbar_bg_color="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/mSimpleBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{activity::onViewClicked}"
+                android:text="基本应用" />
+
+            <Button
+                android:id="@+id/mMapBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{activity::onViewClicked}"
+                android:text="Map 应用" />
+            <Button
+                android:id="@+id/mFlatMapBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{activity::onViewClicked}"
+                android:text="FlatMap 应用" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@{activity.mTextViewContent}"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

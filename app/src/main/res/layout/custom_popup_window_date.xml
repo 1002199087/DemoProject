@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/cancel_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/popupwindow_cancel_text"
+                android:textColor="@drawable/popup_text_selector"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/popup_window_date_button"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/ok_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/popupwindow_ok_text"
+                android:textColor="@drawable/popup_text_selector"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.itheima.wheelpicker.widgets.WheelYearPicker
+                android:id="@+id/wheel_year_picker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                app:wheel_atmospheric="true"
+                app:wheel_cyclic="true"
+                app:wheel_selected_item_text_color="@android:color/black" /><!--app:wheel_curved="true"-->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/popupwindow_year_text" />
+
+            <com.itheima.wheelpicker.widgets.WheelMonthPicker
+                android:id="@+id/wheel_month_picker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:wheel_atmospheric="true"
+                app:wheel_cyclic="true"
+                app:wheel_selected_item_text_color="@android:color/black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/popupwindow_month_text" />
+
+            <com.itheima.wheelpicker.widgets.WheelDayPicker
+                android:id="@+id/wheel_day_picker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:wheel_atmospheric="true"
+                app:wheel_cyclic="true"
+                app:wheel_selected_item_text_color="@android:color/black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/popupwindow_day_text" />
+
+            <com.itheima.wheelpicker.widgets.WheelDatePicker
+                android:id="@+id/wheel_date_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:wheel_atmospheric="true"
+                app:wheel_cyclic="true" />
+
+            <com.itheima.wheelpicker.WheelPicker
+                android:id="@+id/wheel_hour_picker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="visible"
+                app:wheel_atmospheric="true"
+                app:wheel_cyclic="true"
+                app:wheel_selected_item_text_color="@android:color/black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/popupwindow_hour_text" />
+
+            <com.itheima.wheelpicker.WheelPicker
+                android:id="@+id/wheel_min_picker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:wheel_atmospheric="true"
+                app:wheel_cyclic="true"
+                app:wheel_selected_item_text_color="@android:color/black"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/popupwindow_min_text" />
+
+            <com.itheima.wheelpicker.WheelPicker
+                android:id="@+id/wheel_sec_picker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:wheel_atmospheric="true"
+                app:wheel_cyclic="true"
+                app:wheel_selected_item_text_color="@android:color/black"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/popupwindow_sec_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
