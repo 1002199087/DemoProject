@@ -149,7 +149,6 @@ public class DownLoadPicActivity extends NewBaseActivity {
         @Override
         public void handleMessage(Message msg) {
             if (weakReference.get() != null) {
-                ViseLog.d("sss");
                 File file = (File) msg.obj;
                 Glide.with(DownLoadPicActivity.this).load(file).into(mPicView);
                 QMUITipDialogUtil.showSuccessDialog(DownLoadPicActivity.this,
