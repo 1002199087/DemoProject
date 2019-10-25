@@ -8,7 +8,7 @@ public class NetworkApi {
     //admin 123456
     //http://47.97.107.184:8116/user/loginByPassword?username=admin&password=123456
 
-    public static final String API_URL = "http://192.168.86.211:8088/";
+    public static final String API_URL = "http://10.1.5.240:8080/";
     public static final String API_LOGIN = "u/user/login";
 
     public static final String API_PC_URL = "http://47.97.107.184:8116/";

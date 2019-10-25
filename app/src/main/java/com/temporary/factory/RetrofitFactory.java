@@ -31,6 +31,10 @@ public class RetrofitFactory {
         return getRetrofit().create(ExpressageNetInterface.class);
     }
 
+    public ExpressageNetInterface getSpringBootInterface() {
+        return getSpringBootRetrofit().create(ExpressageNetInterface.class);
+    }
+
     public Retrofit getRetrofit() {
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(5, TimeUnit
                 .SECONDS).writeTimeout(5, TimeUnit.SECONDS).readTimeout(5, TimeUnit.SECONDS)
@@ -38,6 +42,20 @@ public class RetrofitFactory {
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(NetworkApi.API_EXPRESSAGE_URL)
+                .client(okHttpClient)
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                .build();
+        return retrofit;
+    }
+
+    public Retrofit getSpringBootRetrofit() {
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(5, TimeUnit
+                .SECONDS).writeTimeout(5, TimeUnit.SECONDS).readTimeout(5, TimeUnit.SECONDS)
+                .build();
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(NetworkApi.API_URL)
                 .client(okHttpClient)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
