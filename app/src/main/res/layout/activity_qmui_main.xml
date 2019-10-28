@@ -667,14 +667,14 @@
                 app:qmui_isRadiusAdjustBounds="true" />
 
             <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
-                android:id="@+id/download_pic_button"
+                android:id="@+id/springBoot_request_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/banner_button"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
                 android:padding="10dp"
-                android:text="@string/downLoad_pic_tip"
+                android:text="@string/springboot_request_tip"
                 android:textColor="@drawable/qmui_button_border_color"
                 app:qmui_borderColor="@drawable/qmui_button_border_color"
                 app:qmui_isRadiusAdjustBounds="true" />

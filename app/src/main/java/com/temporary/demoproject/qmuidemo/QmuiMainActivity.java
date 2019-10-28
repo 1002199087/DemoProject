@@ -32,7 +32,7 @@ import com.temporary.demoproject.BindServiceActivity;
 import com.temporary.demoproject.CalendarViewActivity;
 import com.temporary.demoproject.DalvikOrARTActivity;
 import com.temporary.demoproject.DataBindingActivity;
-import com.temporary.demoproject.DownLoadPicActivity;
+import com.temporary.demoproject.SpringBootRequestActivity;
 import com.temporary.demoproject.EventBusMainActivity;
 import com.temporary.demoproject.GlideActivity;
 import com.temporary.demoproject.LaunchModeActivity;
@@ -168,8 +168,8 @@ public class QmuiMainActivity extends AppCompatActivity {
     QMUIRoundButton mBannerBtn;
     @BindView(R.id.arc_bg_button)
     QMUIRoundButton mArcBgBtn;
-    @BindView(R.id.download_pic_button)
-    QMUIRoundButton mDownloadPicBtn;
+    @BindView(R.id.springBoot_request_button)
+    QMUIRoundButton mSpringBootBtn;
     private WheelPicker mWheelPicker;
 
     private PopupWindow mPopupWindow;
@@ -220,11 +220,11 @@ public class QmuiMainActivity extends AppCompatActivity {
             .mvp_retrofit_rxjava_button, R.id.glide_button, R.id.art_button, R.id.service_button,
             R.id.alipay_button, R.id.qq_login_button, R.id.greendao_button, R.id
             .rxpermission_button, R.id.new_baseactivity_button, R.id.website_button,
-            R.id.banner_button, R.id.arc_bg_button, R.id.download_pic_button})
+            R.id.banner_button, R.id.arc_bg_button, R.id.springBoot_request_button})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.download_pic_button: {// 下载图片
-                startActivity(DownLoadPicActivity.getIntent(this));
+            case R.id.springBoot_request_button: {// SpringBoot网络请求
+                startActivity(SpringBootRequestActivity.getIntent(this));
                 break;
             }
             case R.id.arc_bg_button: {// 弧形背景

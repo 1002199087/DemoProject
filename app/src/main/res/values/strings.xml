@@ -257,4 +257,15 @@
     <string name="downLoad_pic_tip">下载图片</string>
 
     <string name="start_downLoad_tip">开始下载</string>
+    <string name="springboot_request_tip">SpringBoot网络请求</string>
+    <string name="loading_tip">正在加载数据</string>
+    <string name="request_the_json_content_tip">获取json格式内容</string>
+    <string name="request_the_json_content_by_params_tip">获取json格式内容（带参数）</string>
+    <string name="request_the_json_content_by_params_with_id_tip">获取json格式内容（带参数，url带id）</string>
+    <string name="request_by_json_params_tip">获取json格式内容（带json参数）</string>
+    <string name="upload_file_tip">上传文件</string>
+    <string name="upload_params_and_file_tip">上传带参数的文件</string>
+    <string name="uploading_file_tip">正在上传文件</string>
+    <string name="success_for_uploading_file_tip">上传完成</string>
+    <string name="fail_for_uploading_file_tip">上传失败</string>
 </resources>

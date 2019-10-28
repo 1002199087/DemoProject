@@ -21,10 +21,10 @@ public class DemoApplication extends Application {
         JPushInterface.setDebugMode(true);
         JPushInterface.init(this);
 
-        if (LeakCanary.isInAnalyzerProcess(this)) {
+        /*if (LeakCanary.isInAnalyzerProcess(this)) {
             return;
         }
-        LeakCanary.install(this);
+        LeakCanary.install(this);*/
 
         ViseLog.getLogConfig()
                 .configAllowLog(true)

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical"
-    tools:context=".DownLoadPicActivity">
+    tools:context=".SpringBootRequestActivity">
 
     <Button
         android:id="@+id/download_button"
@@ -30,5 +30,35 @@
         android:id="@+id/get_json_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="获取json格式内容" />
+        android:text="@string/request_the_json_content_tip" />
+
+    <Button
+        android:id="@+id/get_json_content_by_params"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/request_the_json_content_by_params_tip" />
+
+    <Button
+        android:id="@+id/get_json_content_by_params_with_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/request_the_json_content_by_params_with_id_tip" />
+
+    <Button
+        android:id="@+id/json_params_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/request_by_json_params_tip" />
+
+    <Button
+        android:id="@+id/file_params_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_file_tip" />
+
+    <Button
+        android:id="@+id/params_and_files_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_params_and_file_tip" />
 </LinearLayout>
