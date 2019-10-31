@@ -2,7 +2,9 @@ package com.temporary.bean;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
+import android.databinding.BindingAdapter;
 import android.databinding.ObservableField;
+import android.widget.ImageView;
 
 import com.temporary.demoproject.BR;
 

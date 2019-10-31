@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".viewmodel.MVVMWithBaseActivity">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.temporary.viewmodel.WithBaseViewModel" />
+
+        <variable
+            name="activity"
+            type="com.temporary.demoproject.viewmodel.MVVMWithBaseActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.qmuiteam.qmui.widget.QMUITopBar
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/request_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{activity::onViewClicked}"
+                android:text="@string/springboot_request_tip" />
+
+            <TextView
+                android:id="@+id/content_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@{viewModel.mEventBusDao.getResult}" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

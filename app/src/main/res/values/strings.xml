@@ -268,4 +268,11 @@
     <string name="uploading_file_tip">正在上传文件</string>
     <string name="success_for_uploading_file_tip">上传完成</string>
     <string name="fail_for_uploading_file_tip">上传失败</string>
+
+    <string name="mvvm_mode_tip">MVVM 模式</string>
+    <string name="simple_mode_tip">简单 MVVM 模式</string>
+    <string name="base_mode_tip">带 Base 的 MVVM 模式</string>
+    <string name="list_for_mvvm_tip">RecyclerView 的 MVVM 模式使用</string>
+    <string name="update_tip">刷新</string>
+    <string name="success_for_loading_tip">加载完成</string>
 </resources>

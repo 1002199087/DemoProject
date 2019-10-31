@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MVVMRecyclerActivity">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.temporary.demoproject.MVVMRecyclerActivity" />
+
+        <variable
+            name="viewModel"
+            type="com.temporary.viewmodel.RecyclerViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.qmuiteam.qmui.widget.QMUITopBar
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/item_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

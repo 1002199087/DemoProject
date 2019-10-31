@@ -30,7 +30,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/mQmUI">
-        <activity android:name=".SpringBootRequestActivity"></activity>
+        <activity android:name=".MVVMRecyclerActivity"></activity>
+        <activity android:name=".viewmodel.MVVMWithBaseActivity" />
+        <activity android:name=".MVVMBaseActivity" />
+        <activity android:name=".SimpleMVVMModeActivity" />
+        <activity android:name=".MVVMModeActivity" />
+        <activity android:name=".SpringBootRequestActivity" />
         <activity android:name=".ArcBgActivity" />
         <activity android:name=".BannerActivity" />
         <activity android:name=".WebsiteActivity" />

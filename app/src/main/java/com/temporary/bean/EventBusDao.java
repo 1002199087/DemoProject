@@ -15,6 +15,16 @@ public class EventBusDao extends BaseObservable {
     private int age;
     private String sex;
 
+    private String result;
+
+    public String getResult() {
+        return result;
+    }
+
+    public void setResult(String result) {
+        this.result = result;
+    }
+
     public EventBusDao(String name, int age, String sex) {
         this.name = name;
         this.age = age;

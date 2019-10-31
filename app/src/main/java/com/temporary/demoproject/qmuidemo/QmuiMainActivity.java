@@ -32,18 +32,19 @@ import com.temporary.demoproject.BindServiceActivity;
 import com.temporary.demoproject.CalendarViewActivity;
 import com.temporary.demoproject.DalvikOrARTActivity;
 import com.temporary.demoproject.DataBindingActivity;
-import com.temporary.demoproject.SpringBootRequestActivity;
 import com.temporary.demoproject.EventBusMainActivity;
 import com.temporary.demoproject.GlideActivity;
 import com.temporary.demoproject.LaunchModeActivity;
 import com.temporary.demoproject.LoadingLayoutActivity;
 import com.temporary.demoproject.MPandroidChartActivity;
 import com.temporary.demoproject.MVPAndRetrofitAndRxJavaActivity;
+import com.temporary.demoproject.MVVMModeActivity;
 import com.temporary.demoproject.ObserveActivity;
 import com.temporary.demoproject.R;
 import com.temporary.demoproject.RadioGroupActivity;
 import com.temporary.demoproject.RxPermissionActivity;
 import com.temporary.demoproject.SignatureActivity;
+import com.temporary.demoproject.SpringBootRequestActivity;
 import com.temporary.demoproject.WebsiteActivity;
 import com.temporary.test.JsonActivity;
 import com.vise.log.ViseLog;
@@ -170,6 +171,8 @@ public class QmuiMainActivity extends AppCompatActivity {
     QMUIRoundButton mArcBgBtn;
     @BindView(R.id.springBoot_request_button)
     QMUIRoundButton mSpringBootBtn;
+    @BindView(R.id.mvvm_button)
+    QMUIRoundButton mMvvmBtn;
     private WheelPicker mWheelPicker;
 
     private PopupWindow mPopupWindow;
@@ -220,9 +223,14 @@ public class QmuiMainActivity extends AppCompatActivity {
             .mvp_retrofit_rxjava_button, R.id.glide_button, R.id.art_button, R.id.service_button,
             R.id.alipay_button, R.id.qq_login_button, R.id.greendao_button, R.id
             .rxpermission_button, R.id.new_baseactivity_button, R.id.website_button,
-            R.id.banner_button, R.id.arc_bg_button, R.id.springBoot_request_button})
+            R.id.banner_button, R.id.arc_bg_button, R.id.springBoot_request_button,
+            R.id.mvvm_button})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.mvvm_button: {// MVVM 模式
+                startActivity(MVVMModeActivity.getIntent(this));
+                break;
+            }
             case R.id.springBoot_request_button: {// SpringBoot网络请求
                 startActivity(SpringBootRequestActivity.getIntent(this));
                 break;
