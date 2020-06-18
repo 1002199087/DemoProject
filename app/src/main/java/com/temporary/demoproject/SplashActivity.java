@@ -34,6 +34,7 @@ public class SplashActivity extends Activity {
             @Override
             public void accept(Boolean aBoolean) throws Exception {
                 Intent intent = new Intent(SplashActivity.this, QmuiMainActivity.class);
+                //Intent intent = new Intent(SplashActivity.this, LogAddActivity.class);
                 startActivity(intent);
                 finish();
             }

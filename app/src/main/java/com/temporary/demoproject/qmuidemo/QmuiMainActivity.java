@@ -25,6 +25,7 @@ import com.itheima.wheelpicker.widgets.WheelYearPicker;
 import com.qmuiteam.qmui.util.QMUIStatusBarHelper;
 import com.qmuiteam.qmui.widget.QMUITopBar;
 import com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton;
+import com.temporary.demoproject.AlarmManagerActivity;
 import com.temporary.demoproject.AlipayActivity;
 import com.temporary.demoproject.ArcBgActivity;
 import com.temporary.demoproject.BannerActivity;
@@ -34,8 +35,10 @@ import com.temporary.demoproject.DalvikOrARTActivity;
 import com.temporary.demoproject.DataBindingActivity;
 import com.temporary.demoproject.EventBusMainActivity;
 import com.temporary.demoproject.GlideActivity;
+import com.temporary.demoproject.KotlinActivity;
 import com.temporary.demoproject.LaunchModeActivity;
 import com.temporary.demoproject.LoadingLayoutActivity;
+import com.temporary.demoproject.LogAddActivity;
 import com.temporary.demoproject.MPandroidChartActivity;
 import com.temporary.demoproject.MVPAndRetrofitAndRxJavaActivity;
 import com.temporary.demoproject.MVVMModeActivity;
@@ -173,6 +176,12 @@ public class QmuiMainActivity extends AppCompatActivity {
     QMUIRoundButton mSpringBootBtn;
     @BindView(R.id.mvvm_button)
     QMUIRoundButton mMvvmBtn;
+    @BindView(R.id.kotlin_button)
+    QMUIRoundButton mKotlinBtn;
+    @BindView(R.id.recyler_log_button)
+    QMUIRoundButton mRecylerLogBtn;
+    @BindView(R.id.alarm_manager_button)
+    QMUIRoundButton mAlarmManagerBtn;
     private WheelPicker mWheelPicker;
 
     private PopupWindow mPopupWindow;
@@ -224,9 +233,22 @@ public class QmuiMainActivity extends AppCompatActivity {
             R.id.alipay_button, R.id.qq_login_button, R.id.greendao_button, R.id
             .rxpermission_button, R.id.new_baseactivity_button, R.id.website_button,
             R.id.banner_button, R.id.arc_bg_button, R.id.springBoot_request_button,
-            R.id.mvvm_button})
+            R.id.mvvm_button, R.id.kotlin_button, R.id.recyler_log_button,
+            R.id.alarm_manager_button})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.alarm_manager_button: {// AlarmManager 定时提醒
+                startActivity(AlarmManagerActivity.getIntent(this));
+                break;
+            }
+            case R.id.recyler_log_button: {// recycler log 组件
+                startActivity(LogAddActivity.getIntent(this));
+                break;
+            }
+            case R.id.kotlin_button: {// kotlin 开发
+                startActivity(KotlinActivity.Companion.getIntent(this));
+                break;
+            }
             case R.id.mvvm_button: {// MVVM 模式
                 startActivity(MVVMModeActivity.getIntent(this));
                 break;

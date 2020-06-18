@@ -690,6 +690,42 @@
                 android:textColor="@drawable/qmui_button_border_color"
                 app:qmui_borderColor="@drawable/qmui_button_border_color"
                 app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/kotlin_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/kotlin_tip"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/recyler_log_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/recycler_log_tip"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/alarm_manager_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/alarm_manager_demo_tip"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
         </LinearLayout>
     </ScrollView>
 

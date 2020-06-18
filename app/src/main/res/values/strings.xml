@@ -275,4 +275,12 @@
     <string name="list_for_mvvm_tip">RecyclerView 的 MVVM 模式使用</string>
     <string name="update_tip">刷新</string>
     <string name="success_for_loading_tip">加载完成</string>
+    <string name="kotlin_tip">kotlin 开发</string>
+    <string name="recycler_log_tip">recycler log 组件</string>
+    <string name="kotlin_click_tip">kotlin点击事件</string>
+    <string name="kotlin_recycler_tip">RecyclerView视图</string>
+    <string name="log_increase_tip">log 自增</string>
+    <string name="log_increase_first_btn_tip">用于占位</string>
+    <string name="log_increase_second_btn_tip">显示、隐藏占位</string>
+    <string name="alarm_manager_demo_tip">AlarmManager 定时提醒</string>
 </resources>
