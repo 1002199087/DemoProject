@@ -33,8 +33,8 @@ public class SplashActivity extends Activity {
         new RxPermissions(this).request(PERMISSIONS).subscribe(new Consumer<Boolean>() {
             @Override
             public void accept(Boolean aBoolean) throws Exception {
-                Intent intent = new Intent(SplashActivity.this, QmuiMainActivity.class);
-                //Intent intent = new Intent(SplashActivity.this, LogAddActivity.class);
+                //Intent intent = new Intent(SplashActivity.this, QmuiMainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, PageGridViewActivity.class);
                 startActivity(intent);
                 finish();
             }

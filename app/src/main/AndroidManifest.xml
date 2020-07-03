@@ -30,8 +30,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/mQmUI">
-        <activity android:name=".AlarmManagerActivity"></activity>
-        <activity android:name=".LogAddActivity"></activity>
+        <activity android:name=".PageGridViewActivity"></activity>
+        <activity android:name=".AlarmManagerActivity" />
+        <activity android:name=".LogAddActivity" />
         <activity android:name=".KotlinRecyclerActivity" />
         <activity android:name=".KotlinBaseActivity" />
         <activity android:name=".KotlinDemoCodeActivity" />
@@ -165,7 +166,6 @@
                 <action android:name="android.intent.action.TEST_SERVICE" />
             </intent-filter>
         </service>
-
         <service
             android:name="com.temporary.service.AlarmService"
             android:process=":newinst">
@@ -173,7 +173,6 @@
                 <action android:name="service.AlarmService" />
             </intent-filter>
         </service>
-
 
         <activity android:name=".AlipayActivity" />
         <activity
