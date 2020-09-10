@@ -1,6 +1,7 @@
 package com.temporary.demoproject;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import io.reactivex.functions.Consumer;
 
 public class SplashActivity extends Activity {
 
+    @SuppressLint("CheckResult")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,8 +35,7 @@ public class SplashActivity extends Activity {
         new RxPermissions(this).request(PERMISSIONS).subscribe(new Consumer<Boolean>() {
             @Override
             public void accept(Boolean aBoolean) throws Exception {
-                //Intent intent = new Intent(SplashActivity.this, QmuiMainActivity.class);
-                Intent intent = new Intent(SplashActivity.this, PageGridViewActivity.class);
+                Intent intent = new Intent(SplashActivity.this, QmuiMainActivity.class);
                 startActivity(intent);
                 finish();
             }

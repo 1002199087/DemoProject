@@ -16,15 +16,15 @@ import java.util.List;
  * theme:
  * author：wyy
  */
-public class MyGridViewAdpter extends BaseAdapter {
+public class GridViewAdpter extends BaseAdapter {
     private Context context;
     private List<GridItem> lists;//数据源
     private int mIndex; // 页数下标，标示第几页，从0开始
     private int mPargerSize;// 每页显示的最大的数量
 
 
-    public MyGridViewAdpter(Context context, List<GridItem> lists,
-                            int mIndex, int mPargerSize) {
+    public GridViewAdpter(Context context, List<GridItem> lists,
+                          int mIndex, int mPargerSize) {
         this.context = context;
         this.lists = lists;
         this.mIndex = mIndex;

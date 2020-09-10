@@ -726,6 +726,28 @@
                 android:textColor="@drawable/qmui_button_border_color"
                 app:qmui_borderColor="@drawable/qmui_button_border_color"
                 app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/grid_pager_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/grid_for_pager_tip"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/cust_dialog_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/custom_dialog_tip"
+                android:textColor="@drawable/qmui_button_border_color"
+                app:qmui_borderColor="@drawable/qmui_button_border_color"
+                app:qmui_isRadiusAdjustBounds="true" />
         </LinearLayout>
     </ScrollView>
 

@@ -30,7 +30,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/mQmUI">
-        <activity android:name=".PageGridViewActivity"></activity>
+        <activity android:name=".qmuidemo.CustDialogActivity"></activity>
+        <activity android:name=".PageGridViewActivity" />
         <activity android:name=".AlarmManagerActivity" />
         <activity android:name=".LogAddActivity" />
         <activity android:name=".KotlinRecyclerActivity" />

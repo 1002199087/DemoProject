@@ -283,4 +283,7 @@
     <string name="log_increase_first_btn_tip">用于占位</string>
     <string name="log_increase_second_btn_tip">显示、隐藏占位</string>
     <string name="alarm_manager_demo_tip">AlarmManager 定时提醒</string>
+    <string name="grid_for_pager_tip">带翻页的 GridView 组件</string>
+    <string name="custom_dialog_tip">自定义 dialog</string>
+    <string name="custom_dialog_one_tip">带确定、取消</string>
 </resources>

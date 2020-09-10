@@ -99,4 +99,28 @@
         <item>灰度</item>
         <item>圆形</item>
     </string-array>
+
+    <string-array name="main_items">
+        <item>蓝牙连接</item>
+        <item>导入档案</item>
+        <item>单表操作</item>
+        <item>自动抄表</item>
+        <item>查询数据</item>
+        <item>补抄</item>
+        <item>导出数据</item>
+        <item>断开蓝牙</item>
+        <item>断开蓝牙</item>
+    </string-array>
+
+    <string-array name="main_item_icons">
+        <item>@mipmap/icon_conn</item>
+        <item>@mipmap/ic_import</item>
+        <item>@mipmap/ic_single</item>
+        <item>@mipmap/ic_auto</item>
+        <item>@mipmap/ic_datas</item>
+        <item>@mipmap/ic_machine</item>
+        <item>@mipmap/ic_out</item>
+        <item>@mipmap/ic_disconn</item>
+        <item>@mipmap/ic_disconn</item>
+    </string-array>
 </resources>

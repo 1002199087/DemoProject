@@ -3,7 +3,6 @@ package com.temporary.adapter;
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 
 import java.util.List;
 
@@ -11,11 +10,11 @@ import java.util.List;
  * theme:
  * author：wyy
  */
-public class MyViewPagerAdapter extends PagerAdapter {
+public class ViewPagerAdapter extends PagerAdapter {
     private List<View> viewList;//View就二十GridView
 
 
-    public MyViewPagerAdapter(List<View> viewList) {
+    public ViewPagerAdapter(List<View> viewList) {
         this.viewList = viewList;
     }
 

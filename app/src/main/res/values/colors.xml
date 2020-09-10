@@ -38,6 +38,7 @@
     <color name="theme_color_item_orange">#FF9D8D</color>
 
     <color name="theme_color_hint_black">#aa000000</color>
+    <color name="theme_color_hint_black_2">#22000000</color>
     <color name="theme_color_yellow_one">#F89805</color>
     <color name="theme_color_yellow">#EEEE00</color>
 

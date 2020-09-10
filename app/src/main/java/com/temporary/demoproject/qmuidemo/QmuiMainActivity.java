@@ -43,6 +43,7 @@ import com.temporary.demoproject.MPandroidChartActivity;
 import com.temporary.demoproject.MVPAndRetrofitAndRxJavaActivity;
 import com.temporary.demoproject.MVVMModeActivity;
 import com.temporary.demoproject.ObserveActivity;
+import com.temporary.demoproject.PageGridViewActivity;
 import com.temporary.demoproject.R;
 import com.temporary.demoproject.RadioGroupActivity;
 import com.temporary.demoproject.RxPermissionActivity;
@@ -182,6 +183,10 @@ public class QmuiMainActivity extends AppCompatActivity {
     QMUIRoundButton mRecylerLogBtn;
     @BindView(R.id.alarm_manager_button)
     QMUIRoundButton mAlarmManagerBtn;
+    @BindView(R.id.grid_pager_button)
+    QMUIRoundButton mGridPagerBtn;
+    @BindView(R.id.cust_dialog_button)
+    QMUIRoundButton mCustDialogBtn;
     private WheelPicker mWheelPicker;
 
     private PopupWindow mPopupWindow;
@@ -234,9 +239,17 @@ public class QmuiMainActivity extends AppCompatActivity {
             .rxpermission_button, R.id.new_baseactivity_button, R.id.website_button,
             R.id.banner_button, R.id.arc_bg_button, R.id.springBoot_request_button,
             R.id.mvvm_button, R.id.kotlin_button, R.id.recyler_log_button,
-            R.id.alarm_manager_button})
+            R.id.alarm_manager_button, R.id.grid_pager_button, R.id.cust_dialog_button})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.cust_dialog_button: {// 自定义 dialog
+                startActivity(CustDialogActivity.getIntent(this));
+                break;
+            }
+            case R.id.grid_pager_button: {// 带翻页的 GridView 组件
+                startActivity(PageGridViewActivity.getIntent(this));
+                break;
+            }
             case R.id.alarm_manager_button: {// AlarmManager 定时提醒
                 startActivity(AlarmManagerActivity.getIntent(this));
                 break;
